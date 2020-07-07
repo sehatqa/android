@@ -1,0 +1,14 @@
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+*.class
+*.swp
+bin/lib/TempTestCase*
+Reports/
+\.classpath
+\.project
+\.settings/
+bin/lib/
+Libs/
