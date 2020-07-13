@@ -44,7 +44,7 @@ import cucumber.api.java.en.When
 
 
 class Register_steps {
-	
+
 	@Given("User is on register page")
 	def navigate_to_register_page() {
 		Mobile.startApplication('C:\\Users\\User\\Katalon Studio\\SehatQ_Android\\AndroidApp\\sehatq_production.apk', false)
