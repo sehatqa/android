@@ -49,14 +49,14 @@ class Logout_steps {
 	def go_to_app_settings_page() {
 		Mobile.startApplication('C:\\Users\\User\\Katalon Studio\\SehatQ_Android\\AndroidApp\\sehatq_production.apk', false)
 
-		Mobile.waitForElementPresent(findTestObject('Object Repository/Home_page/btn_profile'), 0)
+		Mobile.waitForElementPresent(findTestObject('Object Repository/Home_page/btn_profile'), 5)
 
 		Mobile.tap(findTestObject('Object Repository/Home_page/btn_profile'), 1)
-		
+
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Profile_page/btn_more'), 0, FailureHandling.STOP_ON_FAILURE)
-		
+
 		Mobile.tap(findTestObject('Object Repository/Profile_page/btn_more'), 1)
-		
+
 		Mobile.tap(findTestObject('Object Repository/Profile_page/btn_terapkan'), 0)
 	}
 
@@ -67,13 +67,13 @@ class Logout_steps {
 
 	@And("User confirm to logout")
 	def confirm_logout() {
-		
+
 		Mobile.tap(findTestObject('Object Repository/AppSetting_page/btn_yes'), 2)
 	}
 
 	@Then("User success logout")
 	def verify_logout_logout() {
-		
+
 		Mobile.verifyElementVisible(findTestObject('Object Repository/Home_page/btn_login'), 0, FailureHandling.STOP_ON_FAILURE)
 	}
 }
